@@ -207,15 +207,6 @@ header{
             max-width: 100%;
         }
 
-.about li a{
-    color: black;
-    text-decoration: none;
-}
-
-    .about li a:hover{
-        text-decoration: underline;
-    }
-
             .about .container .content-column .column .row{
                 padding: 10px;
             }
@@ -240,12 +231,12 @@ header{
                     line-height: 1.2;
                 }
 
-                .about .container .content-column .text .contact-links a{
+                .about .container .content-column .text a{
                     color: black;
                     text-decoration: none;
                 }
 
-                    .about .container .content-column .text .contact-links a:hover{
+                    .about .container .content-column .text a:hover{
                         text-decoration: underline;
                     }
     
