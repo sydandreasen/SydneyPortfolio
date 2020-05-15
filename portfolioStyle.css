@@ -346,6 +346,10 @@ header{
     text-decoration: none;
 } 
 
+    .projects .container .content-column .row .project-list a:hover{
+        text-decoration: underline;
+    }
+
 .research{
     background-color: lightgray;
 }
