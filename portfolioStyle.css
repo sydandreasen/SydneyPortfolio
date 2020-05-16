@@ -177,7 +177,6 @@ header{
 
     .about .container .content-column{
         width: 75%;
-        display: inline-flex;
         padding: 10px;
         display: inline-flex;
         flex-wrap: wrap;
