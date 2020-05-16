@@ -233,11 +233,11 @@ header{
 
                 .about .container .content-column .text a{
                     color: black;
-                    text-decoration: none;
+                    text-decoration: underline solid gray;
                 }
 
                     .about .container .content-column .text a:hover{
-                        text-decoration: underline;
+                        text-decoration: underline solid black;
                     }
     
     .about .container .column .row .about-title{
@@ -343,11 +343,11 @@ header{
 
 .projects .container .content-column .row .project-list a{
     color: white;
-    text-decoration: none;
+    text-decoration: underline solid gray;
 } 
 
     .projects .container .content-column .row .project-list a:hover{
-        text-decoration: underline;
+        text-decoration: underline solid white;
     }
 
 .research{
@@ -441,9 +441,9 @@ header{
 
     .research .container .column .row .text a{
         color: black;
-        text-decoration: none;
+        text-decoration: underline solid gray;
     }
 
     .research .container .column .row .text a:hover{
-        text-decoration: underline;
+        text-decoration: underline solid black;
     }
