@@ -30,6 +30,10 @@ header{
     border-bottom: 1px solid lightgray;
 }
 
+    header .row-mobile{
+        display: block;
+    }
+
 header .name{
     background-color: rgb(204, 204, 255);
     position: relative;
@@ -62,17 +66,26 @@ header .name{
 header .navBar{
     background-color: rgb(204, 204, 255);
     width: auto;
-    min-width: 200px;
+    min-width: 100px;
 }
 
     header .navBar ul{
         list-style: none;
-        padding-left: 5px;
+        padding-left: 0px;
+        margin-left: 0px;
+        width: 100%;
     }
 
-    header .navBar ul li{
-        display: inline-block;
+    header .navBar-wide ul li{
+        display: inline-flex;
+        flex-wrap: wrap;
     }
+
+        header .navBar-mobile ul li{
+            display: block;
+            width: 100%;
+            min-width: 100px;
+        }
 
     header .navBar ul li a{
         color: black;
@@ -84,6 +97,12 @@ header .navBar{
         font-weight: 550;
         position: relative;
     }
+
+        header .navBar-mobile ul li a{
+            width: 100%;
+            padding-left: 5px;
+            display: inline-block;
+        }
 
     header .navBar ul li a:hover::before{
         content: '';
