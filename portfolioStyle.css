@@ -380,6 +380,95 @@ header .navBar{
         text-decoration: underline solid white;
     }
 
+.internship{
+    background-color: white;
+}
+
+.internship .container{
+    padding: 5px;
+}
+
+.internship .container .column{
+    padding: 15px;
+    display: inline-table;
+    width: 100%;
+}
+
+    .internship .container .title-column{
+        width: 20%;
+    }
+
+    .internship .container .content-column{
+        width: 75%;
+    }
+
+    .internship .container .column .row{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+.internship .container .title-column .row .internship-title{
+    text-transform: uppercase;
+    color: black;
+    padding-bottom: 15px;
+    min-width: 175px;
+}
+
+    .internship .container .title-column .row .internship-title p{
+        border-top: 1px solid black;
+        line-height: 1.4;
+        padding-bottom: 30px;
+    }
+
+    .PayPal {
+        background: linear-gradient(to left top, #041c6c, #07abf9);;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+    .internship .container .title-column .row .internship-title .backButton a{
+        padding: 4px;
+        border: 1px solid black;
+        border-radius: 6px;
+        position: relative;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .internship .container .title-column .row .internship-title .backButton a:hover{
+            background-color: black;
+            color: white;
+        }
+    
+        .internship .container .content-column .row .internship-list{
+            color: black;
+        }
+        
+            .internship .container .content-column .row .internship-list h1{
+                margin: 15px 0px;
+                border-top: 1px black solid;
+            }
+
+            .internship .container .content-column .row .internship-list p{
+                margin: 10px 0px;
+            }
+        
+            .internship .container .content-column .row .internship-list ul{
+                margin: 10px 0px;
+            }
+        
+        .internship .container .content-column .row .internship-list a{
+            color: black;
+            text-decoration: underline solid gray;
+        } 
+        
+            .internship .container .content-column .row .internship-list a:hover{
+                text-decoration: underline solid black;
+            }
+
 .research{
     background-color: lightgray;
 }
