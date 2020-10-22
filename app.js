@@ -19,8 +19,64 @@ window.addEventListener("resize", () => {
   }
 });
 
-let home = document.getElementById("home");
-let about = document.getElementById("about");
-let projects = document.getElementById("projects");
-let internship = document.getElementById("internship");
-let research = document.getElementById("research");
+// setup for scroll animations
+const controller = new ScrollMagic.Controller();
+
+// animation to occur for element, with time, and action
+
+// animations not reliant on scroll position
+// about section
+// pictures
+let tl1 = new TimelineMax();
+tl1.from(".about .content-column .picture", 0.3, { x: 1000 });
+const s1 = new ScrollMagic.Scene({
+  triggerElement: ".about-title",
+  triggerHook: "onEnter",
+})
+  .setTween(tl1)
+  .addTo(controller);
+// about title
+let tl2 = new TimelineMax();
+tl2.from(".about-title", 0.5, { x: -200 });
+const s2 = new ScrollMagic.Scene({
+  triggerElement: ".about-title",
+  triggerHook: "onEnter",
+})
+  .setTween(tl2)
+  .addTo(controller);
+// contact info
+let tl6 = new TimelineMax();
+tl6.from(".contact-links", 0.5, { scale: 0 });
+const s6 = new ScrollMagic.Scene({
+  triggerElement: ".contact-links",
+  triggerHook: "onEnter",
+})
+  .setTween(tl6)
+  .addTo(controller);
+// projects section
+let tl3 = new TimelineMax();
+tl3.from(".projects-title", 0.5, { x: -200 });
+const s3 = new ScrollMagic.Scene({
+  triggerElement: ".projects-title",
+  triggerHook: "onEnter",
+})
+  .setTween(tl3)
+  .addTo(controller);
+// internship section
+let tl4 = new TimelineMax();
+tl4.from(".internship-title", 0.5, { x: -200 });
+const s4 = new ScrollMagic.Scene({
+  triggerElement: ".internship-title",
+  triggerHook: "onEnter",
+})
+  .setTween(tl4)
+  .addTo(controller);
+// research section
+let tl5 = new TimelineMax();
+tl5.from(".research-title", 0.5, { x: -200 });
+const s5 = new ScrollMagic.Scene({
+  triggerElement: ".research-title",
+  triggerHook: "onEnter",
+})
+  .setTween(tl5)
+  .addTo(controller);
