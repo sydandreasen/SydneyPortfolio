@@ -28,7 +28,7 @@ const controller = new ScrollMagic.Controller();
 // about section
 // pictures
 let tl1 = new TimelineMax();
-tl1.from(".about .content-column .picture", 0.3, { x: 1000 });
+tl1.from(".about .content-column .picture", 0.3, { x: 50 });
 const s1 = new ScrollMagic.Scene({
   triggerElement: ".about-title",
   triggerHook: "onEnter",
@@ -37,7 +37,7 @@ const s1 = new ScrollMagic.Scene({
   .addTo(controller);
 // about title
 let tl2 = new TimelineMax();
-tl2.from(".about-title", 0.5, { x: -200 });
+tl2.from(".about-title", 0.5, { x: -50 });
 const s2 = new ScrollMagic.Scene({
   triggerElement: ".about-title",
   triggerHook: "onEnter",
@@ -55,7 +55,7 @@ const s6 = new ScrollMagic.Scene({
   .addTo(controller);
 // projects section
 let tl3 = new TimelineMax();
-tl3.from(".projects-title", 0.5, { x: -200 });
+tl3.from(".projects-title", 0.5, { x: -50 });
 const s3 = new ScrollMagic.Scene({
   triggerElement: ".projects-title",
   triggerHook: "onEnter",
@@ -64,7 +64,7 @@ const s3 = new ScrollMagic.Scene({
   .addTo(controller);
 // internship section
 let tl4 = new TimelineMax();
-tl4.from(".internship-title", 0.5, { x: -200 });
+tl4.from(".internship-title", 0.5, { x: -50 });
 const s4 = new ScrollMagic.Scene({
   triggerElement: ".internship-title",
   triggerHook: "onEnter",
@@ -73,10 +73,29 @@ const s4 = new ScrollMagic.Scene({
   .addTo(controller);
 // research section
 let tl5 = new TimelineMax();
-tl5.from(".research-title", 0.5, { x: -200 });
+tl5.from(".research-title", 0.5, { x: -50 });
 const s5 = new ScrollMagic.Scene({
   triggerElement: ".research-title",
   triggerHook: "onEnter",
 })
   .setTween(tl5)
+  .addTo(controller);
+
+// home section
+let tl7 = new TimelineMax();
+tl7.from(".home .home-content .block", 0.5, { x: -200 });
+const s7 = new ScrollMagic.Scene({
+  triggerElement: ".home",
+  triggerHook: "onEnter",
+})
+  .setTween(tl7)
+  .addTo(controller);
+
+let tl8 = new TimelineMax();
+tl8.from("header .navBar", 0.5, { y: -500 });
+const s8 = new ScrollMagic.Scene({
+  triggerElement: ".home",
+  triggerHook: "onEnter",
+})
+  .setTween(tl8)
   .addTo(controller);

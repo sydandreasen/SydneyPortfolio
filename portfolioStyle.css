@@ -67,20 +67,6 @@ header .navBar {
   background-color: rgb(204, 204, 255);
   width: auto;
   min-width: 100px;
-  animation-name: slide-down;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  position: relative;
-}
-
-@keyframes slide-down {
-  0% {
-    top: -40px;
-  }
-  100% {
-    top: 0px;
-  }
 }
 
 header .navBar ul {
@@ -162,20 +148,6 @@ header a:hover {
   padding-left: 7px;
   align-items: baseline;
   min-width: 350px;
-  animation-name: slide-in;
-  animation-duration: 1s;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
-  position: relative;
-}
-
-@keyframes slide-in {
-  0% {
-    left: -200px;
-  }
-  100% {
-    left: 0px;
-  }
 }
 
 .home .home-content .block h5 {
